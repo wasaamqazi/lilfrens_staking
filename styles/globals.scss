@@ -1,0 +1,1385 @@
+@font-face {
+  font-family: "Anja";
+  src: url("/fonts/Anja.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Airbnb";
+  src: url("/fonts/AirbnbCerealMedium.ttf");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: black;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.active {
+  opacity: 1;
+}
+
+.home {
+  position: relative;
+  background-color: #DACECB;
+  video {
+    pointer-events: none;
+    width: 100%;
+  }
+  .aboutContainer {
+    background: linear-gradient(173.97deg, #DACECB -4.58%, #BECCFF 105.06%);
+    .about {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 140px 20px;
+      color: white;
+      position: relative;
+      .image2 {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        height: 300px;
+        @media(max-width: 600px) {
+          display: none;
+        }
+      }
+      h2 {
+        font-family: "Anja";
+        font-size: 40px;
+        margin: 0;
+        letter-spacing: 3px;
+      }
+      h1 {
+        font-family: "Anja";
+        font-size: 90px;
+        letter-spacing: 3px;
+        margin: 0;
+        margin-top: 10px;
+        line-height: 98px;
+      }
+      p {
+        font-family: "Airbnb";
+        font-size: 24px;
+      }
+    }
+  }
+  .transition {
+    display: flex;
+    font-family: "Anja";
+    .one {
+      flex: 1;
+      display: flex;
+      background-color: #FFFAE8;
+      color: #F698F8;
+      font-size: 64px;
+      line-height: 60px;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      @media(max-width: 800px) {
+        font-size: 40px;
+      }
+    }
+    .two {
+      flex: 1;
+      background-color: #DCF7FF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 90%;
+      }
+      @media(max-width: 800px) {
+        display: none;
+      }
+    }
+    .three {
+      flex: 2;
+      display: flex;
+      background-color: #DAFFE0;
+      color: #CD92FF;
+      font-size: 60px;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      line-height: 64px;
+      @media(max-width: 800px) {
+        display: none;
+      }
+    }
+    .four {
+      flex: 1;
+      background: linear-gradient(180deg, #F1A1DE, #82E8FA);
+      video {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .teamContainer {
+    background: linear-gradient(153.4deg, #C2CCF7 17.94%, #FF91F4 76.73%);
+    padding: 100px 20px;
+    h1 {
+      font-family: "Anja";
+      font-size: 90px;
+      letter-spacing: 3px;
+      margin: 0;
+      color: white;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .team {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-gap: 40px;
+      grid-template-columns: repeat(1, 1fr);
+      @media (min-width: 600px) {
+        grid-template-columns: repeat(2, 1fr)
+      }
+      @media (min-width: 900px) {
+        grid-template-columns: repeat(3, 1fr)
+      }
+      .team-member {
+        text-align: center;
+        background-color: white;
+        padding: 30px;
+        border-radius: 20px;
+        .team-photo {
+          margin-bottom: 20px;
+        }
+        .team-member-name {
+          font-family: "Anja";
+          font-size: 36px;
+          margin: 0;
+        }
+        .team-member-title {
+          font-family: "Airbnb";
+          font-size: 20px;
+          margin: 0;
+        }
+        .team-member-description {
+          font-family: "Airbnb";
+          font-size: 14px;
+          margin-bottom: 20px;
+        }
+        .team-member-link {
+          display: inline-block;
+          img {
+            display: inline-block;
+            height: 24px;
+            vertical-align: middle;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+    .viewCollabTeam {
+      background-color: #F53FC9;
+      padding: 20px;
+      font-family: "Anja";
+      color: white;
+      outline: none;
+      border: none;
+      border-radius: 20px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
+  .mapContainer {
+    background: linear-gradient(180deg, #FF90F4 0.01%, #5056F0 89.58%);
+    padding: 100px 20px;
+    h1 {
+      font-family: "Anja";
+      font-size: 90px;
+      letter-spacing: 3px;
+      margin: 0;
+      color: white;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .map {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-gap: 40px;
+      grid-template-columns: repeat(1, 1fr);
+      @media (min-width: 600px) {
+        grid-template-columns: repeat(2, 1fr)
+      }
+      @media (min-width: 900px) {
+        grid-template-columns: repeat(3, 1fr)
+      }
+      .phase {
+        padding: 0px 30px 30px 30px;
+        background-color: white;
+        color: black;
+        border-radius: 20px;
+        h1 {
+          color: black;
+          font-size: 40px;
+          margin: 0;
+        }
+        img {
+          width: 90%;
+        }
+        p {
+          font-family: "Airbnb";
+          text-align: center;
+          margin: 10px 0px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .faqContainer {
+    background: linear-gradient(180deg, #5056F0 0%, #9458D9 72.4%, #EC5ABB 100%);
+    .faq {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 140px 20px;
+      color: white;
+      h1 {
+        font-family: "Anja";
+        font-size: 90px;
+        letter-spacing: 3px;
+        margin: 0;
+        color: white;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .closeContainer {
+    background-color: #EC5ABB;
+    .close-cta {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 140px 20px 200px 20px;
+      color: white;
+      h1 {
+        font-family: "Anja";
+        font-size: 90px;
+        letter-spacing: 3px;
+        margin: 0;
+        color: white;
+        text-align: left;
+        margin: 0;
+        margin-bottom: 20px;
+      }
+      h3 {
+        font-family: "Airbnb";
+        font-size: 24px;
+        display: inline-block;
+        margin: 0;
+        margin-right: 20px;
+      }
+      a {
+        padding: 10px 20px;
+        color: #FFF625;
+        background-color: #DB46A9;
+        border-radius: 50px;
+        font-size: 20px;
+        font-family: "Airbnb";
+        &:hover {
+          background-color: #de32a5;
+        }
+      }
+    }
+  }
+}
+
+.mainHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+  position: absolute;
+  background: none;
+  top: 0;
+  @media(max-width: 700px) {
+    padding: 10px;
+  }
+  .left {
+    font-size: 20px;
+    color: white;
+    img {
+      height: 50px;
+      margin-top: 8px;
+      transition-duration: 0.15s;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+    @media(max-width: 700px) {
+      font-size: 16px;
+    }
+  }
+  .right {
+    a {
+      box-sizing: border-box;
+      font-family: "Airbnb";
+      font-size: 24px;
+      font-weight: 500;
+      color: white;
+      transition-duration: 0.15s;
+      height: 40px;
+      line-height: 60px;
+      text-align: center;
+      &:hover {
+        text-decoration: underline;
+      }
+      @media(max-width: 700px) {
+        display: none;
+        line-height: 30px;
+        margin: 10px auto;
+      }
+    }
+    .cta {
+      box-sizing: border-box;
+      padding: 8px 20px;
+      font-family: "Anja";
+      font-size: 24px;
+      color: white;
+      background-color: black;
+      border-radius: 14px;
+      margin-left: 14px;
+      @media(max-width: 700px) {
+        display: block;
+      }
+    }
+  }
+}
+
+.frenslistCheckContainer {
+  width: 100%;
+  height: calc(100vh - 60px);
+  margin: 0 auto;
+  background: linear-gradient(249.47deg, #6CB5F8 -8.6%, #B08EF9 109.86%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 180px;
+  .frenslistCheck {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    @media(max-width: 600px) {
+      flex-direction: column;
+    }
+    .left {
+      flex: 1;
+      text-align: center;
+      padding: 20px;
+      img {
+        width: 100%;
+        @media(max-width: 600px) {
+          display: none;
+        }
+      }
+    }
+    .right {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+      h1 {
+        font-family: "Anja";
+        color: white;
+        font-size: 70px;
+        margin: 0;
+        line-height: 78px;
+        margin-bottom: 10px;
+        letter-spacing: 3px;
+        @media(max-width: 600px) {
+          font-size: 56px;
+        }
+      }
+      p {
+        font-family: "Airbnb";
+        color: white;
+        font-size: 20px;
+        margin: 0;
+        margin-bottom: 40px;
+      }
+      .submit {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+        input {
+          padding: 20px;
+          width: 350px;
+          flex-grow: 2;
+          font-size: 18px;
+          border-top-left-radius: 20px;
+          border-bottom-left-radius: 20px;
+          outline: none;
+          border: none;
+          @media(max-width: 600px) {
+            width: 200px;
+          }
+          @media(max-width: 400px) {
+            width: 100px;
+          }
+        }
+        button {
+          padding: 20px;
+          background-color: black;
+          color: white;
+          font-weight: 500;
+          font-size: 16px;
+          outline: none;
+          border: none;
+          border-right-width: 20px;
+          border-top-right-radius: 20px;
+          border-bottom-right-radius: 20px;
+          cursor: pointer;
+        }
+      }
+      .checkState {
+        padding: 10px 20px;
+        background-color: white;
+        color: black;
+        border-radius: 20px;
+      }
+    }
+  }
+}
+
+.airdropContainer {
+  width: 100%;
+  
+  margin: 0 auto;
+  background: #E5E5E5;
+  background-image: url("../public/assets/rainbow-bg.png");
+  background-size: cover;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+
+  @media(max-width: 750px) {
+    padding-top: 130px;
+  }
+
+  
+  .pfp {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+      img {
+        padding-top: 50px;
+        max-width: 60%;
+        margin: 0 auto;
+        @media(max-width: 750px) {
+          padding-top: 0px;
+          width: 100%;
+        }
+      }
+
+      h1 {
+        padding-bottom: 20px;
+        margin: 0;
+        font-family: 'Airbnb';
+      }
+      .selectContainer {
+        padding: 20px;
+      }
+
+      .cropOptions {
+        padding-top: 10px;
+
+        display: flex;
+        text-align: center;
+        margin: 0 auto;
+        @media(max-width: 750px) {
+          flex-direction: column;
+        }
+        button {
+          color: #828282;
+          background-color: white;
+          display: inline-block;
+          padding: 10px 80px;
+          margin: 10px;
+          font-size: 24px;
+          border-radius: 25px;
+          -webkit-appearance: none;
+          border: 1px solid transparent;
+          font-family: "Airbnb";
+          cursor: pointer;
+          vertical-align: middle;
+          &:hover {
+            background-color: rgb(248, 245, 248);
+          }
+        }
+        .downloadButton {
+          font-family: "Anja";
+          background-color: black;
+          color: white;
+          &:hover {
+            background-color: rgb(138, 125, 218);
+          }
+
+          &:disabled {
+            background: rgba(0, 0, 0, 0.5); 
+            border: 1px solid white;
+            color: rgba(255, 255, 255, 0.4);
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
+  }
+  .pfpConnect {
+    height: 95vh;
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    // background-color: white;
+    @media(max-width: 750px) {
+      flex-direction: column-reverse;
+    }
+    h1 {
+      font-family: "Anja";
+      font-size: 90px;
+      margin: 0;
+      line-height: 78px;
+      margin-bottom: 10px;
+      letter-spacing: 3px;
+      text-align: center;
+      @media(max-width: 600px) {
+        font-size: 56px;
+      }
+    }
+
+    p {
+      font-family: "Airbnb";
+      font-size: 20px;
+      margin: 0;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .left {
+      display: flex;
+      flex: 1;
+      // text-align: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .right {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: center;
+
+      
+      img {
+        padding-top: 50px;
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .cloudContainer {
+        text-align: center;
+      }
+    }
+  }
+  .message {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Airbnb";
+    padding: 30px;
+    h1 {
+      font-size: 50px;
+    }
+    a {
+      box-sizing: border-box;
+      padding: 8px 20px;
+      font-family: "Anja";
+      font-size: 24px;
+      color: white;
+      background-color: black;
+      border-radius: 14px;
+      margin-left: 14px;
+      margin: 0 auto;
+      &:hover {
+        text-decoration: underline;
+        background-color: black;
+      }
+    }
+    
+  }
+}
+
+.pfpContainer {
+  width: 100%;
+  margin: 0 auto;
+  background: #E5E5E5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100px;
+  @media(max-width: 750px) {
+    padding-top: 130px;
+  }
+  .pfp {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    
+    .left {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+      canvas {
+        width: 33%;
+        margin: 0 auto;
+        @media(max-width: 750px) {
+          width: 100%;
+        }
+      }
+      .selectContainer {
+        padding: 20px;
+      }
+
+      .cropOptions {
+        padding: 20px;
+        display: flex;
+        text-align: center;
+        margin: 0 auto;
+        @media(max-width: 750px) {
+          flex-direction: column;
+        }
+        button {
+          color: #828282;
+          background-color: white;
+          display: inline-block;
+          padding: 3px 25px;
+          margin: 10px;
+          font-size: 24px;
+          border-radius: 25px;
+          -webkit-appearance: none;
+          border: 1px solid transparent;
+          font-family: "Airbnb";
+          cursor: pointer;
+          vertical-align: middle;
+          &:hover {
+            background-color: rgb(248, 245, 248);
+          }
+        }
+        .downloadButton {
+          background-color: #5056F0;
+          color: #000;
+          &:hover {
+            background-color: rgb(138, 125, 218);
+          }
+        }
+      }
+    }
+  }
+  .pfpConnect {
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    // background-color: white;
+    @media(max-width: 750px) {
+      flex-direction: column;
+    }
+    h1 {
+      font-family: "Anja";
+      font-size: 90px;
+      margin: 0;
+      line-height: 78px;
+      margin-bottom: 10px;
+      letter-spacing: 3px;
+      text-align: center;
+      @media(max-width: 600px) {
+        font-size: 56px;
+      }
+    }
+
+    p {
+      font-family: "Airbnb";
+      font-size: 20px;
+      margin: 0;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .left {
+      display: flex;
+      flex: 1;
+      // text-align: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .right {
+      flex: 1;
+      img {
+        width: 105%;
+      }
+    }
+  }
+  .message {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Airbnb";
+    padding: 30px;
+    h1 {
+      font-size: 50px;
+    }
+    a {
+      box-sizing: border-box;
+      padding: 8px 20px;
+      font-family: "Anja";
+      font-size: 24px;
+      color: white;
+      background-color: black;
+      border-radius: 14px;
+      margin-left: 14px;
+      margin: 0 auto;
+      &:hover {
+        text-decoration: underline;
+        background-color: black;
+      }
+    }
+    
+  }
+}
+.stakingContainer {
+  width: 100%;
+  margin: 0 auto;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100px;
+  .staking {
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    @media(max-width: 750px) {
+      flex-direction: column;
+    }
+    .left {
+      flex: 1;
+      text-align: center;
+      padding: 20px;
+      margin-right: 40px;
+      @media(max-width: 750px) {
+        display: none;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        @media(max-width: 600px) {
+          display: none;
+        }
+      }
+    }
+    .right {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+      h1 {
+        font-family: "Anja";
+        color: black;
+        font-size: 70px;
+        margin: 0;
+        line-height: 78px;
+        margin-bottom: 10px;
+        letter-spacing: 3px;
+        text-align: center;
+        @media(max-width: 600px) {
+          font-size: 56px;
+        }
+      }
+      p {
+        font-family: "Airbnb";
+        color: black;
+        font-size: 20px;
+        margin: 0;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+      .submit {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+        input {
+          padding: 20px;
+          width: 350px;
+          flex-grow: 2;
+          font-size: 18px;
+          border-top-left-radius: 20px;
+          border-bottom-left-radius: 20px;
+          outline: none;
+          border: none;
+          @media(max-width: 600px) {
+            width: 200px;
+          }
+          @media(max-width: 400px) {
+            width: 100px;
+          }
+        }
+        button {
+          padding: 20px;
+          background-color: black;
+          color: white;
+          font-weight: 500;
+          font-size: 16px;
+          outline: none;
+          border: none;
+          border-right-width: 20px;
+          border-top-right-radius: 20px;
+          border-bottom-right-radius: 20px;
+          cursor: pointer;
+        }
+      }
+
+      .stake {
+        text-align: center;
+        .stats {
+          display: flex;
+          justify-content: space-between;
+          .stat {
+            padding: 20px;
+            .number {
+              font-size: 40px;
+              font-family: "Anja";
+            }
+            .name {
+              font-size: 30px;
+              font-family: "Airbnb";
+            }
+          }
+        }
+      
+        .stakeButton {
+          font-size: 30px;
+          font-family: "Anja";
+          padding: 20px 40px;
+          outline: none;
+          border: none;
+          border-radius: 10px;
+          background: linear-gradient(87.88deg, #FFB4B4 -4.4%, #FFDDBD 15.62%, #FFF1BD 38.9%, #C6FFBD 62.71%, #BDDBFF 82.73%, #DEBDFF 99.51%);  
+          cursor: pointer;
+          margin-top: 40px;
+        }
+
+        .stakeArea {
+          margin-bottom: 40px;
+          h2 {
+            font-family: "Anja";
+            font-size: 34px;
+            margin: 0;
+          }
+          p {
+            font-family: "Airbnb";
+            font-size: 20px;
+            margin: 0;
+            margin-bottom: 8px;
+          }
+          .stakable {
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            .stakeSelect {
+              flex: 1;
+              padding: 8px;
+              img {
+                width: 100%;
+              }
+              label {
+                font-size: 20px;
+                font-family: "Airbnb";
+              }
+            }
+          }
+        }
+        .unstakeButton {
+          border: none;
+          background: none;
+          outline: none;
+          margin-top: 20px;
+          font-weight: 500;
+          font-size: 18px;
+          font-family: "Airbnb";
+          background-color: black;
+          padding: 10px 20px;
+          border-radius: 10px;
+          color: white;
+          cursor: pointer;
+        }
+      }
+      .availableToStake {
+        margin-top: 10px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.connectWallet {
+  padding: 10px 20px;
+  color: white;
+  font-family: "Anja";
+  font-size: 20px;
+  background-color: black;
+  outline: none;
+  border: none;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 14px;
+  border: 1px solid white;
+}
+
+.wallet-navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+  position: absolute;
+  background: none;
+  top: 0;
+  @media(max-width: 600px) {
+    padding: 10px 20px;
+  }
+  .left {
+    img {
+      height: 40px;
+      margin-top: 8px;
+      transition-duration: 0.15s;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+    @media(max-width: 500px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.mint-navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+  position: absolute;
+  background: none;
+  top: 0;
+  @media(max-width: 600px) {
+    padding: 10px 20px;
+  }
+  .left {
+    img {
+      height: 40px;
+      margin-top: 8px;
+      transition-duration: 0.15s;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+    @media(max-width: 500px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.mint-wrapper {
+  background: linear-gradient(249.47deg, #89B8FF -8.6%, #FFE7F8 109.86%);
+  color: white;
+  .mint-head {
+    font-size: 90px;
+    font-family: "Anja";
+    letter-spacing: 2px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 70px;
+    text-align: center;
+    padding-top: 80px;
+    @media(max-width: 600px) {
+      font-size: 60px;
+      line-height: 54px;
+    }
+  }
+  .mint-box {
+    display: flex;
+    padding: 100px 20px;
+    @media(max-width: 700px) {
+      padding: 140px 0px;
+    }
+    .left {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 100%;
+      }
+      @media(max-width: 800px) {
+        display: none;
+      }
+    }
+    .right {
+      flex: 2;
+
+      .supplyCount {
+        text-align: center;
+        font-family: "Anja";
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+.mint-hero {
+  color: white;
+  text-align: center;
+  padding-bottom: 140px;
+  p {
+    font-size: 20px;
+    font-family: "Airbnb";
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .disclaimer {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+}
+
+.mint-info {
+  display: flex;
+  color: white;
+  padding: 60px;
+  flex-direction: row;
+  @media(max-width: 500px) {
+    padding: 20px;
+    flex-direction: column;
+  }
+  .preview {
+    position: relative;
+    margin-right: 50px;
+    width: 40%;
+    @media(max-width: 1200px) {
+      position: static;
+      display: block;
+      flex-direction: column;
+      margin: 0;
+    }
+    @media(max-width: 1000px) {
+      position: static;
+      display: block;
+      width: 100%;
+      flex-direction: column;
+      margin: 0;
+    }
+    img {
+      position: absolute;
+      top: -230px;
+      left: -50px;
+      height: 600px;
+      @media(max-width: 1470px) {
+        height: 500px;
+        top: -160px;
+      }
+      @media(max-width: 1200px) {
+        display: block;
+        position: static;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .info {
+    width: 60%;
+    float: right;
+    h2 {
+      font-family: "MBF-Moonlander";
+      font-size: 24px;
+      margin-top: 0;
+    }
+    p {
+      font-size: 18px;
+      font-family: "MBF-Modifi";
+      text-transform: uppercase;
+    }
+    @media(max-width: 500px) {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.mint-banner {
+  padding: 10px;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  font-family: "Airbnb";
+  text-transform: uppercase;
+  font-weight: 400;
+  word-break: break-all;
+  border-radius: 20px;
+}
+
+.mintSection {
+  font-family: "MBF-Modifi";
+  background: black;
+  color: white;
+  padding: 60px;
+  border-radius: 30px;
+  margin-top: 20px;
+  .mintLabel {
+    font-family: "Anja";
+    font-size: 30px;
+    margin-right: 30px;
+    @media(max-width: 700px) {
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  .mintNumber {
+    margin-bottom: 30px;
+    .numMint {
+      color: black;
+      font-size: 24px;
+      background-color: white;
+      padding: 14px 20px;
+      font-family: "Anja";
+      border-radius: 10px;
+      width: 100px;
+      text-align: center;
+      pointer-events: none;
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+          /* display: none; <- Crashes Chrome on hover */
+          -webkit-appearance: none;
+          margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+      }
+
+      &[type=number] {
+          -moz-appearance:textfield; /* Firefox */
+      }
+    }
+    .numControl {
+      display: inline-block;
+      padding: 6px 15px;
+      font-size: 24px;
+      border-radius: 0;
+      -webkit-appearance: none;
+      border: 1px solid transparent;
+      background: none;
+      color: white;
+      font-family: "Anja";
+      cursor: pointer;
+      vertical-align: middle;
+    }
+  }
+  .mintPrice {
+    margin-bottom: 40px;
+    .price {
+      color: black;
+      font-size: 24px;
+      background-color: white;
+      padding: 14px 20px;
+      font-family: "Anja";
+      border-radius: 10px;
+    }
+  }
+  .mintButton {
+    margin-top: 40px;
+    padding: 10px 30px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 30px;
+    color: white;
+    outline: none;
+    font-size: 24px;
+    font-family: "Anja";
+    text-transform: uppercase;
+    margin-top: 30px;
+    width: 100%;
+    cursor: pointer;
+    &:disabled {
+      background: rgba(0, 0, 0, 0.5); 
+      border: 1px solid white;
+      color: rgba(255, 255, 255, 0.4);
+      cursor: not-allowed;
+    }
+  }
+}
+
+
+.footer {
+  background-color: black;
+  color: #5D5D5D;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border: none;
+  .left {
+    .copy {
+      font-family: "Airbnb";
+      color: white;
+      font-size: 20px;
+    }
+  }
+  .right {
+    a {
+      img {
+        height: 30px;
+      }
+    }
+  }
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  text-align: left;
+  background: none;
+  border: 1px solid white;
+  width: 100%;
+  color: white;
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.accordion__section {
+  padding-bottom: 20px;
+}
+
+/* Style the accordion content title */
+.accordion__title {
+  font-family: "Airbnb", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  vertical-align: middle;
+  padding-left: 14px;
+  padding-right: 20px;
+  @media(max-width: 700px) {
+    text-align: left;
+    font-size: 20px;
+    padding-left: 0;
+  }
+}
+
+.plus {
+  vertical-align: middle;
+  float: right;
+}
+
+/* Style the accordion chevron icon */
+.accordion__icon {
+  margin-left: auto;
+  transition: transform 0.6s ease;
+  vertical-align: middle;
+}
+
+/* Style to rotate icon when state is active */
+.rotate {
+  transform: rotate(90deg);
+}
+
+/* Style the accordion content panel. Note: hidden by default */
+.accordion__content {
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Style the accordion content text */
+.accordion__text {
+  font-family: "Airbnb", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 20px;
+  line-height: 24px;
+  color: white;
+  background: none;
+  text-align: left;
+  border: 1px solid white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  a {
+    color: rgb(0, 87, 145);
+  }
+  @media(max-width: 500px) {
+    text-align: left;
+  }
+}
