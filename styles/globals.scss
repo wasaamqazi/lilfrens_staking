@@ -1383,3 +1383,264 @@ a {
     text-align: left;
   }
 }
+
+
+/*new Staking css */
+.loogo {
+  width: 208px;
+}
+ul.navigations {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 100%;
+
+  li{
+    list-style-type: none;
+  }
+}
+.navs-link {
+  padding: 8px 29px;
+  background: black;
+  color: white;
+  margin: 10px;
+  
+  font-family: "Anja";
+  padding: 8px 20px;
+  
+  font-size: 24px;
+  color: white;
+  background-color: black;
+  border-radius: 14px;
+  margin-left: 14px;
+  text-decoration: none;
+}
+.navs-link:hover{
+ color: white; 
+}
+#lilheader{
+  position: absolute;
+  width: 100%;
+  padding-top:30px ;
+  z-index: 999;
+}
+.stakebanner{
+  width: 100%;
+}
+.containerS {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+h2.staking-title {
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 70.0704px;
+  line-height: 89px;
+  text-transform: capitalize;
+  color: #FF5EEF;
+  text-shadow: 0px 3.71585px 2.47724px rgb(0 0 0 / 46%);
+  font-family: "Anja";
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+button.connect-wallet {
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  font-family: 'Anja';
+  font-size: 23px;
+  background: #000000;
+  border: 2.4898px solid #FFFFFF;
+  border-radius: 16.1837px;
+}
+.staking-p {
+  margin: 0 auto;
+  margin-top: 60px;
+  font-family: "Airbnb";
+  margin-bottom: 60px;
+  text-align: center;
+  color: white;
+  max-width: 805px !important;
+  /* margin: 0 auto; */
+}
+.centered {
+  position: absolute;
+  top: 66.1%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.staking-bg {
+  background: url(../public/assets/Staking-bg.webp);
+  background-size: cover;
+}
+.changecolor{
+  color: #FFF95E !important;
+  text-align: center;
+  padding-top: 14rem;
+}
+h3.frens-staked {
+  font-family: 'Anja';
+  text-align: center;
+  color: white;
+  letter-spacing: 2px;
+  text-shadow: 0px 1.20988px 0.806587px rgba(0, 0, 0, 0.42);
+}
+h3.frens-staked-black {
+  font-family: 'Anja';
+  text-align: center;
+  
+}
+
+h2.staking-title.changecolor {
+  background: url(../public/assets/2.png);
+  background-repeat: no-repeat;
+  background-position: 341px 163px;
+}
+
+img.card-image {
+  background: -webkit-gradient(linear, left top, right top, from(#1CD8D2), to(#93EDC7));
+  background: -webkit-linear-gradient(left, #1CD8D2 0%, #93EDC7 100%);
+  background: -moz-linear-gradient(left, #1CD8D2 0%, #93EDC7 100%);
+  background: linear-gradient(90deg, #1CD8D2 0%, #93EDC7 100%);
+  border: 2.51528px solid #FFFFFF;
+  border-radius: 8.38427px;
+  width: 114px;
+}
+.card-tit {
+  font-size: 13px;
+  padding-top: 2px;
+  padding-left: 10px;
+  font-family: 'Airbnb';
+  color: white;
+}
+.text-chkbox{
+  display: flex;
+  padding-top: 7px;
+  justify-content: center;
+}
+
+h2.stake-tit {
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 40px;
+  text-transform: capitalize;
+  color: #fff95e;
+  font-family: "Anja";
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0px 1.82175px 1.2145px rgba(0, 0, 0, 0.42);
+}
+.stake-b-rect {
+  background: rgba(0, 0, 0, 0.48);
+  border: 2.8065px solid #FFFFFF;
+  border-radius: 7.89126px;
+  padding: 50px 0px;
+}
+p.text321 {
+  text-align: center;
+  color: white;
+  font-family: 'Airbnb';
+}
+section.stake-area {
+  padding-top: 80px;
+}
+
+.cards-wrap input[type="checkbox"] {
+ 
+  accent-color: #62C2B7;
+}
+.single-card {
+  margin: 0px 10px;
+}
+.cards-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button.stakebtn {
+  background: black;
+  color: white;
+  font-family: 'Anja';
+  /* font-style: normal; */
+  /* font-weight: 1000; */
+  font-size: 24px;
+  line-height: 35px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 2.4898px solid #FFFFFF;
+  border-radius: 16.1837px;
+  text-transform: uppercase;
+}
+.btn-wrap {
+  text-align: center;
+ 
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.unstake-area{
+  padding-top: 80px;
+  padding-bottom: 200px;
+}
+// @media (min-width:1600px) AND (max-width:1920px) {
+ 
+// }
+section.stake-area .container .row {
+  padding: 10px;
+}
+section.unstake-area .container .row {
+  padding: 10px;
+}
+
+@media (max-width:769px) {
+  button.stakebtn {
+  
+    font-size: 15px;
+}
+h2.staking-title {
+ 
+  font-size: 25px;
+  line-height: normal;
+}
+
+.loogo {
+  width: 118px;
+}
+.navs-link { 
+  margin: 0px;
+  padding: 9px 13px;
+  font-size: 14px;
+  margin-left: 12px;
+}
+.staking-bg {
+ 
+  background: linear-gradient(188deg, #e952b2, #cac4f6);
+}
+}
+
+@media (max-width:1400px) AND (min-width:1200px) {
+  img.card-image {
+  
+   
+    width: 101px;
+}
+}
+
+
+@media(max-width:576px){
+  .single-card {
+    margin-top: 10px;
+}
+}

@@ -13,6 +13,7 @@ export default function MainHeader({style}) {
             <div className="right">
                 <Link href="/stake"><a className="cta">stake</a></Link>
                 <Link href="/pfp"><a className="cta">pfp</a></Link>
+                <Link href="https://auction.lilfrens.xyz/"><a className="cta">Auction</a></Link>
             </div>
         </div>
     )

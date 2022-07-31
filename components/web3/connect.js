@@ -40,10 +40,10 @@ export default function Connect() {
     if (type === 'coinbase') {
       await activate(walletlink);
     } else if (type === 'metamask') {
-      if(window.ethereum) {
+      if (window.ethereum) {
         await activate(injected);
       }
-      else if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+      else if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         window.location = "https://metamask.app.link/dapp/lilfrens.xyz/mint"
       }
     } else {
@@ -64,57 +64,60 @@ export default function Connect() {
   const ENSName = useENSName(library, account);
 
   return (
-    <Box sx={{textAlign: 'center'}}>
-    {!active ? (
-      <button variant="contained"
-        disableElevation
-        onClick={handleConnect}
-        className="connectWallet"
-      >
-        Connect Wallet
-      </button>
+    <Box sx={{ textAlign: 'center' }}>
+      {!active ? (
+        <div className="btn-wrapper-c-wallet ">
+          <button disableElevation onClick={handleConnect} className="connect-wallet">Connect Wallet</button>
+        </div>
+        // <button variant="contained"
+        //   disableElevation
+        //   onClick={handleConnect}
+        //   className="connectWallet"
+        // >
+        //   Connect Wallet
+        // </button>
       ) :
-    <div>
-      <button
-        variant="contained"
-        onClick={handleMenuClick}
-        disableElevation
-        endIcon={<KeyboardArrowDownIcon />}
-        className="connectWallet"
-      >
-        {account && (ENSName || abridgeAddress(account))}
-      </button>
-      <CustomMenu
-        id="basic-menu"
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleMenuClose}
-        MenuListProps={{
-          'aria-labelledby': 'basic-button',
-        }}
-        anchorOrigin={{
-          vertical: 'bottom',
-          horizontal: 'right',
-        }}
-        transformOrigin={{
-          vertical: 'top',
-          horizontal: 'right',
-        }}
-      >
-        <MenuItem
-          variant="contained"
-          onClick={handleDisconnect}
-        >
-          Disconnect
-        </MenuItem>
-      </CustomMenu>
-    </div>
-    }
-    <ConnectModal
-      isModalVisible={isModalVisible}
-      handleLoginClick={handleLoginClick}
-      handleClose={handleClose}
-    />
+        <div>
+          <button
+            variant="contained"
+            onClick={handleMenuClick}
+            disableElevation
+            endIcon={<KeyboardArrowDownIcon />}
+            className="connectWallet"
+          >
+            {account && (ENSName || abridgeAddress(account))}
+          </button>
+          <CustomMenu
+            id="basic-menu"
+            anchorEl={anchorEl}
+            open={open}
+            onClose={handleMenuClose}
+            MenuListProps={{
+              'aria-labelledby': 'basic-button',
+            }}
+            anchorOrigin={{
+              vertical: 'bottom',
+              horizontal: 'right',
+            }}
+            transformOrigin={{
+              vertical: 'top',
+              horizontal: 'right',
+            }}
+          >
+            <MenuItem
+              variant="contained"
+              onClick={handleDisconnect}
+            >
+              Disconnect
+            </MenuItem>
+          </CustomMenu>
+        </div>
+      }
+      <ConnectModal
+        isModalVisible={isModalVisible}
+        handleLoginClick={handleLoginClick}
+        handleClose={handleClose}
+      />
     </ Box>
   )
 }
